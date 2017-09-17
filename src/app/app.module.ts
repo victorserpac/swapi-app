@@ -1,16 +1,29 @@
+// Importando dependencias
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
+// Importando o router
+import { routing } from './app.routes';
 
+// Importando componentes
+import { AppComponent } from './app.component';
+import { MovieListingComponent } from './movie-listing/movie-listing.component';
+
+// Importando modulos
+import { MovieModule } from './movie/movie.module';
+
+// Declarando modulo
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing,
+    MovieModule,
+  ],
+  declarations: [
+    AppComponent,
+    MovieListingComponent,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
