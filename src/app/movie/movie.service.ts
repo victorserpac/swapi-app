@@ -24,4 +24,15 @@ export class MovieService {
     });
   }
 
+  getByUrl(url) {
+    return new Promise((resolve, reject) => {
+      this.http.get(url)
+        .subscribe(res => {
+          const movie = res.json();
+
+          resolve(movie);
+        });
+    });
+  }
+
 }
