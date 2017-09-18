@@ -11,7 +11,7 @@ import { MovieListingComponent } from './movie-listing/movie-listing.component';
 
 // Importando modulos
 import { MovieModule } from './movie/movie.module';
-import { MovieDetailsComponent } from './movie-details/movie-details.component';
+import { MovieDetailsModule } from './movie-details/movie-details.module';
 
 // Declarando modulo
 @NgModule({
@@ -19,11 +19,11 @@ import { MovieDetailsComponent } from './movie-details/movie-details.component';
     BrowserModule,
     routing,
     MovieModule,
+    MovieDetailsModule,
   ],
   declarations: [
     AppComponent,
     MovieListingComponent,
-    MovieDetailsComponent,
   ],
   providers: [],
   bootstrap: [ AppComponent ]
