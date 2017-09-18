@@ -14,4 +14,4 @@ e execute a aplicação com:
 
 Pronto! Agora é possível acessar a aplicação no seguinte endereço:
 
-`https://github.com/victorserpac/swapi-app`
+`http://localhost:4200`
