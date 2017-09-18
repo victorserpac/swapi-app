@@ -1,3 +1,9 @@
-<div>Testando</div>
-{{ movies }}
-<movie></movie>
+<section id="movie-listing">
+  <div class="container">
+    <div class="columns is-multiline is-mobile">
+      <div class="column is-12-mobile is-one-third-tablet" *ngFor="let movie of movies">
+        <movie title="{{movie.title}}" episodeId="{{movie.episode_id}}"></movie>
+      </div>
+    </div>
+  </div>
+</section>

@@ -5,6 +5,9 @@ import { MovieService } from '../movie/movie.service';
 @Component({
   selector: 'movie-listing',
   templateUrl: './movie-listing.component.html',
+  styleUrls: [
+    './movie-listing.component.css',
+  ]
 })
 
 export class MovieListingComponent {
@@ -16,7 +19,10 @@ export class MovieListingComponent {
     this.service = service;
     
     service.list()
-      .then(movies => this.movies = movies)
+      .then(movies => {
+        this.movies = movies;
+        console.log(movies);
+      })
       .catch(msg => this.message = msg);
   }
 }

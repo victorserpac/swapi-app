@@ -11,6 +11,7 @@ import { MovieListingComponent } from './movie-listing/movie-listing.component';
 
 // Importando modulos
 import { MovieModule } from './movie/movie.module';
+import { MovieDetailsComponent } from './movie-details/movie-details.component';
 
 // Declarando modulo
 @NgModule({
@@ -22,6 +23,7 @@ import { MovieModule } from './movie/movie.module';
   declarations: [
     AppComponent,
     MovieListingComponent,
+    MovieDetailsComponent,
   ],
   providers: [],
   bootstrap: [ AppComponent ]
